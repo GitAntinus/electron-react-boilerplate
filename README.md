@@ -35,7 +35,7 @@
 First, clone the repo via git:
 
 ```bash
-git clone --depth=1 https://github.com/chentsulin/electron-react-boilerplate.git your-project-name
+git clone --depth=1 git@github.com:GitAntinus/electron-react-boilerplate.git your-project-name
 ```
 
 And then install dependencies with yarn.
@@ -98,7 +98,7 @@ DEBUG_PROD=true npm run package
 
 ## How to add modules to the project
 
-You will need to add other modules to this boilerplate, depending on the requirements of your project. For example, you may want to add [node-postgres](https://github.com/brianc/node-postgres) to communicate with PostgreSQL database, or 
+You will need to add other modules to this boilerplate, depending on the requirements of your project. For example, you may want to add [node-postgres](https://github.com/brianc/node-postgres) to communicate with PostgreSQL database, or
 [material-ui](http://www.material-ui.com/) to reuse react UI components.
 
 ⚠️ Please read the following section before installing any dependencies ⚠️

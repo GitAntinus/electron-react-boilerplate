@@ -202,9 +202,14 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "electron": "^2.0.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
     "@material-ui/core": "^1.4.0",
+    "electron": "^2.0.2",
     "history": "^4.7.2",
+    "i": "^0.3.6",
+    "npm": "^6.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-hot-loader": "^4.2.0",
