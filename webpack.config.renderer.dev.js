@@ -152,12 +152,10 @@ export default merge.smart(baseConfig, {
           {
             loader: 'less-loader',
             options: {
-              options: {
-                paths: [
-                  path.resolve(__dirname, './styles'),
-                  path.resolve(__dirname, './node_modules')
-                ]
-              }
+              paths: [
+                path.resolve(__dirname, './styles'),
+                path.resolve(__dirname, './node_modules')
+              ]
             }
           }
         ]
