@@ -74,8 +74,7 @@ export default merge.smart(baseConfig, {
               loader: 'less-loader',
               options: {
                 paths: [
-                  path.resolve(__dirname, './styles'),
-                  path.resolve(__dirname, './node_modules')
+                  path.resolve(__dirname, './styles')
                 ]
               }
             }
@@ -101,8 +100,7 @@ export default merge.smart(baseConfig, {
               loader: 'less-loader',
               options: {
                 paths: [
-                  path.resolve(__dirname, './styles'),
-                  path.resolve(__dirname, './node_modules')
+                  path.resolve(__dirname, './styles')
                 ]
               }
             }
