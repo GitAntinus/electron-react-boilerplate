@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "version": "0.13.3",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "productionName",
+  "productName": "productionName",
+  "version": "1.0.0",
+  "description": "delevoped by Eric Deng",
   "scripts": {
     "build": "concurrently \"npm run build-main\" \"npm run build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.renderer.dev.dll.js --colors",
@@ -41,8 +41,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "productionName",
+    "appId": "me.antinus.home.prod",
     "files": [
       "dist/",
       "node_modules/",
@@ -82,14 +82,10 @@
       "output": "release"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
-  },
   "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
+    "name": "Eric Deng",
+    "email": "gantinus@gmail.com",
+    "url": "https://github.com/GitAntinus"
   },
   "license": "MIT",
   "bugs": {
@@ -198,16 +194,15 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.1",
-    "@fortawesome/free-solid-svg-icons": "^5.1.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "@fortawesome/react-fontawesome": "^0.1.0",
-    "@material-ui/core": "^1.4.0",
-    "ajv": "^6.5.2",
+    "@material-ui/core": "^1.4.1",
     "devtron": "^1.4.0",
     "electron-debug": "^1.5.0",
     "font-awesome": "^4.7.0",
     "history": "^4.7.2",
-    "less": "^3.7.1",
+    "less": "^3.8.0",
     "less-loader": "^4.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
@@ -216,9 +211,11 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.6",
+    "recompose": "^0.27.1",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
-    "source-map-support": "^0.5.6"
+    "source-map-support": "^0.5.6",
+    "typeface-roboto": "0.0.54"
   },
   "devEngines": {
     "node": ">=7.x",
