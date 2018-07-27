@@ -59,49 +59,43 @@ export default merge.smart(baseConfig, {
           }
         })
       },
+      // Add SASS support  - compile all .global.scss files and pipe it to style.css
       {
         test: /\.global\.less$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                minimize: true
+              }
+            },
+            {
+              loader: 'less-loader'
             }
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              paths: [path.resolve(__dirname, './styles')]
-            }
-          }
-        ]
+          ],
+          fallback: 'style-loader'
+        })
       },
-      // SASS support - compile all other .scss files and pipe it to style.css
+      // Add SASS support  - compile all other .scss files and pipe it to style.css
       {
         test: /^((?!\.global).)*\.less$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              sourceMap: true,
-              importLoaders: 1,
-              localIdentName: '[name]__[local]__[hash:base64:5]'
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                minimize: true,
+                importLoaders: 1,
+                localIdentName: '[name]__[local]__[hash:base64:5]'
+              }
+            },
+            {
+              loader: 'less-loader'
             }
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              paths: [path.resolve(__dirname, './styles')]
-            }
-          }
-        ]
+          ]
+        })
       },
       // WOFF Font
       {
