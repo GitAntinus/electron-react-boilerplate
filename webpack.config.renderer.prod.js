@@ -72,10 +72,12 @@ export default merge.smart(baseConfig, {
             },
             {
               loader: 'less-loader',
-              paths: [
-                path.resolve(__dirname, './styles'),
-                path.resolve(__dirname, './node_modules')
-              ]
+              options: {
+                paths: [
+                  path.resolve(__dirname, './styles'),
+                  path.resolve(__dirname, './node_modules')
+                ]
+              }
             }
           ],
           fallback: 'style-loader'
@@ -97,10 +99,12 @@ export default merge.smart(baseConfig, {
             },
             {
               loader: 'less-loader',
-              paths: [
-                path.resolve(__dirname, './styles'),
-                path.resolve(__dirname, './node_modules')
-              ]
+              options: {
+                paths: [
+                  path.resolve(__dirname, './styles'),
+                  path.resolve(__dirname, './node_modules')
+                ]
+              }
             }
           ]
         })
